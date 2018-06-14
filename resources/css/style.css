@@ -1,0 +1,389 @@
+/* -----
+BASIC SETUP
+----- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', 'Helvetica', 'Arial','San Serif';
+    font-size: 20px;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+.clearfix {
+    zoom: 1px;
+}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+/* -----   
+REUSABLE   
+----- */
+.center {
+    max-width: 1140px;
+    margin: 70px auto;
+    height: 100%;
+    text-align: center;
+}
+
+
+.box {
+    padding: 1%;
+}
+
+
+section{
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0px;
+    margin: 0px 0px 300px 0px;
+}
+
+
+/* -----   HEADINGS   ----- */
+h1, 
+h2, 
+h3 { 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1 {
+    padding: 50px 0px;
+    color: #000000;
+    font-size: 240%;
+    word-spacing: 4px;
+    width: 100%;
+}
+h2 {
+    color: #000000;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+}
+h3 {
+    margin-bottom: 15px;
+    font-size: 110%;
+}
+
+
+/* -----   LINKS   ----- */
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #000000;
+    transition: border-bottom 0.4s, color 0.4s;
+}
+
+
+a:active,
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+
+/* -----   
+HEADER
+----- */
+/* -----   Announcement bar   ----- */
+.anc-bar {
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+
+/* -----   Main nav   ----- */
+.main-nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px #8e8e8e;
+    z-index: 99;
+}
+
+
+.logo {
+    height: 30px;
+    width: auto;
+    float: left;
+    margin: 20px 0px 20px 30px;
+}
+
+
+.menu {
+    float: right;
+    margin: 25px 30px 0px 0px;
+}
+
+
+.main-nav li {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0px;
+    color: 3e3e3e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: color 0.4s, border-bottom 0.4s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    padding: 5px 0px;
+    color: #000000;
+    border-bottom: 2px solid #3e3e3e;
+}
+
+
+/* -----   Mobile nav   ----- */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.mobile-nav-icon i {
+    color: #000000;
+    font-size: 270%;
+}
+
+
+
+
+/* -----   
+WELCOME
+----- */
+.section-welcome {
+    background-image: url(bgs/welcome.jpg);
+    height: 100vh;
+    align-items: center;
+}
+
+
+.slogan {
+    height: 150px;
+    margin: 90px 0px;
+}
+
+
+.welcome {
+    position: absolute;
+    width: 100%; 
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+
+.section-welcome h2 {
+    text-transform: none;
+}
+
+
+
+
+/* -----   
+ABOUT
+----- */
+.section-about {
+    background-image: url(bgs/about.jpg);
+}
+
+
+.about {
+    top: 50%;
+    left: 50%;
+}
+
+
+.optionals {
+    margin-top: 150px;
+}
+
+
+.section-about h3 {
+    text-transform: none;
+    margin: 0px;
+}
+
+
+
+/* -----   
+INVENTORY
+----- */
+.section-inventory {
+    background-image: url(bgs/inventory.jpg);
+}
+
+
+.item {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 5%;
+    padding: 25px;
+    display: block;
+}
+
+
+
+.item li{
+    list-style: none;
+    text-align: left;
+}
+
+
+
+.inventory img {
+    width: 100%;
+}
+
+
+
+
+/* -----   
+LOCATION
+----- */
+.section-location {
+    background-image: url(bgs/location.jpg);
+}
+
+
+.location {
+    text-align: left;
+}
+
+
+ 
+.section-location h1, h3 {
+    margin: 0px;
+}
+
+
+/* -----   
+CONTACT
+----- */
+.section-contact {
+    background-image: url(bgs/contact.jpg);    
+}
+
+
+
+
+/* -----   
+FOOTER
+----- */
+footer {
+    background-color: #505050;
+    padding: 60px;
+    font-size: 90%;
+}
+
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0px;
+    color: #8e8e8e;
+    transition: color 0.2;
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active, {
+    color: #ffffff;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 120%;
+}
+
+
+.ft .ion-logo-facebook,
+.ft .ion-logo-instagram,
+.ft .ion-logo-twitter,
+.ft .ion-logo-snapchat {
+    transition: color 0.3s;
+}
+
+
+.ft .ion-logo-facebook:hover {color: #3b5998;}
+.ft .ion-logo-instagram:hover {color: #c32aa3;}
+.ft .ion-logo-twitter:hover {color: #1da1f2;}
+.ft .ion-logo-snapchat:hover {color: #fffc00;}
+
+
+footer p {
+    color: #6c6c6c;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 30px;
+}
